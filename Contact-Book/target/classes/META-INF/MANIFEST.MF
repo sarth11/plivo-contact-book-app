@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: Contact-Book
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: sartha
+Implementation-Vendor-Id: com.plivo.contactbook
+Build-Jdk: 1.8.0_161
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/Contact-Book
+Created-By: Maven Integration for Eclipse
+
