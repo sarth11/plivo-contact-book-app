@@ -12,6 +12,11 @@ import javax.validation.constraints.Size;
 
 import org.springframework.lang.NonNull;
 
+/**
+ * Main Entity class to hold the data
+ * @author sarthak
+ *
+ */
 @Entity
 @Table(name = "contacts")
 public class Contact implements Serializable {

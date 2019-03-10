@@ -11,6 +11,11 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import com.plivo.contactbook.security.AuthenticationEntryPoint;
 
+/**
+ * Basic Authentication Configuration Adapter that validates the username and password sent to access the API's
+ * @author sarthak
+ *
+ */
 @Configuration
 @EnableWebSecurity
 public class CustomWebSecurityConfigurerAdapter extends WebSecurityConfigurerAdapter{

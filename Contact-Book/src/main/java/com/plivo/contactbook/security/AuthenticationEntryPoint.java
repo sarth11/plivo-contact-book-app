@@ -11,6 +11,11 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint;
 import org.springframework.stereotype.Component;
 
+/**
+ * Authentication entry point to access the API's
+ * @author sarthak
+ *
+ */
 @Component
 public class AuthenticationEntryPoint extends BasicAuthenticationEntryPoint{
 	

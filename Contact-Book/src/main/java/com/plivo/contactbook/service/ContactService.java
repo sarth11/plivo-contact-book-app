@@ -1,27 +1,32 @@
 package com.plivo.contactbook.service;
 
-import java.util.List;
-
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import com.plivo.contactbook.model.Contact;
 
+/**
+ * Main Service(layer) interface that provide declarations for all the methods
+ * @author sarthak
+ *
+ */
 @Service
 public interface ContactService {
 	
 	Contact insertContact(Contact contact);
 	
-	List<Contact> getContacts();
+	Page<Contact> getContacts(Pageable pageable);
 	
 	Contact updateContact(Long contactId, Contact contactDetails);
 
 	ResponseEntity<?> findByIdAndDelete(Long contactId);
 
-	List<Contact> getContactsByName(String name);
+	Page<Contact> getContactsByName(String name, Pageable pageable);
 
-	List<Contact> getContactsByEmail(String email);
+	Page<Contact> getContactsByEmail(String email, Pageable pageable);
 
-	List<Contact> getContactsByNameAndEmail(String name, String email);
+	Page<Contact> getContactsByNameAndEmail(String name, String email, Pageable pageable);
 
 }
