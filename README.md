@@ -46,7 +46,6 @@ Searching by name and email(Pagination enabled)
 
 Note: These operation are able to maintain unique email for each contact.
       Database: MYSQL
-      All the unit and integration test cases can be found in /src/test/java/com/plivo/contactbook
       If API gives 500 server error , please check the params and manipulate your request to add the required params.
       (Sample pagination request: https://contact-book-app-plivo.herokuapp.com/api/contact-book/v1/contacts?page=0&size =4)
 
